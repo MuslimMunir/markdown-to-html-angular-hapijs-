@@ -1,0 +1,32 @@
+<div class="row">
+	<div class="well">
+		<span ng-if="alert && alert.message" ng-class="alert && alert.messageType === 0 ? 'info' : 'error' "> {{alert.message}}</span>
+		<h1>Convert markdown to html</h1>
+		<form class="form-horizontal" name="userForm" novalidate>
+			<div class="row control-group col-sm-12 form-group">
+				<div class="col-sm-2">
+					<label class="control-label">Enter text
+					</label>
+				</div>
+				<div class="col-sm-4 customized-form-control">
+					<textarea rows="15" style="width:100%" class="form-control" ng-model="markdown" required></textarea>
+				</div>
+			</div>
+			<div class="row control-group col-sm-12 form-group">
+				<div class="control-label col-sm-2 customized-form-control">
+
+				</div>
+				<div class=" col-sm-4">
+					<button class="btn btn-primary" ng-disabled="markdown.length === 0" ng-click="submit()">Save</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="well" data-ng-init="getAll()">
+		<span ng-if="markdowns.length === 0">No Markdowns converted yet</span>
+		<h1>Converted markdowns</h1>
+		<ul class="list list-group">
+			<li class="list-group-item pointer" ng-repeat="item in markdowns"><a href="/markdowns/{{item._id}}">{{item.markdown}}</a></li>
+		</ul>
+	</div>
+</div>

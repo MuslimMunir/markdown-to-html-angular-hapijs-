@@ -1,0 +1,15 @@
+<div class="row" data-ng-init="get()">
+	<div class="well">
+		<span ng-if="alert && alert.message" ng-class="alert && alert.messageType === 0 ? 'info' : 'error' "> {{alert.message}}</span>
+		<h1>Markdown Detail</h1>
+		<div class="col-sm-4 customized-form-control">
+			<textarea rows="15" style="width:100%" class="form-control" ng-model="markdown.markdown" required></textarea>
+		</div>
+	</div>
+	<div class="well">
+		<h1>Markdown to Html</h1>
+		<div class="col-sm-4 customized-form-control">
+			<textarea rows="15" style="width:100%" class="form-control" ng-model="markdown.html" required></textarea>
+		</div>
+	</div>
+</div>

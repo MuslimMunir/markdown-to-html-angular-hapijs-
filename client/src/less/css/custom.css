@@ -1,0 +1,29 @@
+/****** Custom Classes ******/
+
+.class1 {
+	color: rgb(33, 96, 177);
+}
+
+.class2 {
+	color: rgb(23, 66, 122);
+}
+
+.error {
+	color: red;
+	margin-top: 10px;
+}
+
+.info {
+	color: green;
+	margin-top: 10px;
+}
+
+.list {
+	margin-top: 15px;
+	height: 300px;
+	overflow: auto;
+}
+
+.list-group-item {
+	margin: 20px;
+}

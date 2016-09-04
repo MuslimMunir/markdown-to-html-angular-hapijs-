@@ -1,0 +1,28 @@
+{
+  "name": "MARKDOWN_TO_HTML_CONVERTER",
+  "description": "Markdown Converter backup of all markdown conversions performed",
+  "version": "0.1.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=0.10.22"
+  },
+  "dependencies": {
+    "boom": "^2.6.1",
+    "hapi": "^8.2.0",
+    "joi": "^5.1.0",
+    "mongoose": "^4.1.11"
+  },
+  "keywords": [
+    "node.js",
+    "hapi.js",
+    "mongoose",
+    "angular",
+    "markdown",
+    "html",
+    "markdown_to_html"
+  ],
+  "author": {
+    "name": "Muslim Munir",
+    "email": "muslim028@hotmail.com"
+  }
+}
